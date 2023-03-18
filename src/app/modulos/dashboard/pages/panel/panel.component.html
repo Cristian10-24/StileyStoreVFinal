@@ -1,0 +1,11 @@
+<h1 class="text-center">DASHBOARD FUNCIONANDO</h1>
+<div class="row">
+    <div class="col-sm-4 mt-5 mb-1" *ngFor="let card of cards">
+      <div  class="card m-3 lista">
+        <div class="card-body">
+          <h3 routerLink="{cards.route}" class="card-title ">{{card.title}}</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  

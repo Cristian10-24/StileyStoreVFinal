@@ -1,0 +1,32 @@
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" routerLink="/">Stiley Store</a>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" routerLink="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/productos">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/productos/categorias">Promociones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/dashboard">Administrador</a>
+                    </li>
+                </ul>
+                <form class="container-fluid justify-content-start">
+                    <button class="btn btn-outline-success me-2" routerLink="/login" type="button">Ingresar</button>
+                    <button class="btn btn-outline-success me-2" routerLink="/login/registrar" type="button">Registrar</button>
+                </form>
+            </div>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>

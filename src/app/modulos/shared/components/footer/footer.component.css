@@ -1,0 +1,71 @@
+
+a{
+  text-decoration: none;
+  color: #ffffff;
+}
+a:hover{
+  color:#1987cb;
+}
+.footer-menu{
+  float: right;
+
+}
+.footer-menu ul{
+  display: flex;
+}
+.footer-menu ul li{
+padding-right: 10px;
+display: block;
+}
+.footer-menu ul li a{
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer-menu ul li a:hover{
+  color: #1987cb;
+}
+.contenedor{
+  border-bottom: 1px solid white;
+}
+.titulo{
+  color: gray !important;
+}
+.text{
+  color: white !important;
+}
+.text1{
+  color: gray !important;
+}
+.InfFooter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.redes{
+  display: flex;
+  justify-content: end;
+}
+
+/*************************RESPONSIVE PANTALLAS PEQUEÑAS*****************************************/
+@media (max-width:500px) {
+  .footer-menu ul{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    }
+    .redes{
+      justify-content: center !important;
+    }
+    .copyright{
+      text-align: center;
+    }
+  }
+  /*************************RESPONSIVE PANTALLAS MEDIANA*****************************************/
+  @media (max-width:1000px){
+    .copyright{
+      text-align: center !important;
+    }
+    .footer-menu{
+      display: none;
+    }
+  }
