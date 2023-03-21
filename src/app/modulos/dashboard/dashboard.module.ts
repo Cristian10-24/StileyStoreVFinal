@@ -9,16 +9,11 @@ import { ListCalificacionesComponent } from './pages/list-calificaciones/list-ca
 import { ListReclamosComponent } from './pages/list-reclamos/list-reclamos.component';
 import { ListUsuariosComponent } from './pages/list-usuarios/list-usuarios.component';
 import { PanelComponent } from './pages/panel/panel.component';
+import { TablaComponent } from './components/tabla/tabla.component';
+import { SharedModule } from '../shared/shared.module';
+import { CreateProductoComponent } from './pages/list-productos/create-producto/create-producto.component';
 
 
-// Importaciones de Angular Material
-import { MatInputModule } from '@angular/material/input';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
-import { MatTableModule } from '@angular/material/table';
-import { MatPaginatorModule } from '@angular/material/paginator';
-import { MatSortModule } from '@angular/material/sort';
 
 
 @NgModule({
@@ -29,20 +24,15 @@ import { MatSortModule } from '@angular/material/sort';
     ListCalificacionesComponent,
     ListReclamosComponent,
     ListUsuariosComponent,
-    PanelComponent
+    PanelComponent,
+    TablaComponent,
+    CreateProductoComponent
   ],
   imports: [
     CommonModule,
-    DashboardRoutingModule,
+    SharedModule,
+    DashboardRoutingModule
 
-     // Módulos de Angular Material
-     MatInputModule,
-     MatFormFieldModule,
-     MatButtonModule,
-     MatIconModule,
-     MatTableModule,
-     MatPaginatorModule,
-     MatSortModule
   ]
 })
 export class DashboardModule { }

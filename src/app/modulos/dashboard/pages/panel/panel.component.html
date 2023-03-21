@@ -1,9 +1,44 @@
 <h1 class="text-center">DASHBOARD FUNCIONANDO</h1>
 <div class="row">
-    <div class="col-sm-4 mt-5 mb-1" *ngFor="let card of cards">
-      <div  class="card m-3 lista">
+    <div class="col-sm-4 mt-5 mb-1" >
+      <div routerLink="/dashboard/usuarios"  class="card m-3 lista">
         <div class="card-body">
-          <h3 routerLink="{cards.route}" class="card-title ">{{card.title}}</h3>
+          <h3  class="card-title ">Usuarios</h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 mt-5 mb-1" >
+      <div routerLink="/dashboard/productos"  class="card m-3 lista">
+        <div class="card-body">
+          <h3  class="card-title ">Productos</h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 mt-5 mb-1" >
+      <div routerLink="/dashboard/pedidos"  class="card m-3 lista">
+        <div class="card-body">
+          <h3  class="card-title ">Pedidos</h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 mt-5 mb-1" >
+      <div routerLink="/dashboard/ventas"  class="card m-3 lista">
+        <div class="card-body">
+          <h3  class="card-title ">Ventas</h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 mt-5 mb-1" >
+      <div routerLink="/dashboard/calificaciones"  class="card m-3 lista">
+        <div class="card-body">
+          <h3  class="card-title ">Calificaciones</h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 mt-5 mb-1" >
+      <div routerLink="/dashboard/reclamos"  class="card m-3 lista">
+        <div class="card-body">
+          <h3  class="card-title ">Quejas y Reclamos</h3>
         </div>
       </div>
     </div>
