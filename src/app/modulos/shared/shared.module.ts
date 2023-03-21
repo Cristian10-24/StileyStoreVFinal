@@ -3,13 +3,15 @@ import { CommonModule } from '@angular/common';
 import { FooterComponent } from './components/footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
+import { UbicacionHorariosComponent } from './components/ubicacion-horarios/ubicacion-horarios.component';
 
 
 
 @NgModule({
   declarations: [
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    UbicacionHorariosComponent
   ],
   imports: [
     CommonModule,
@@ -17,7 +19,8 @@ import { HeaderComponent } from './components/header/header.component';
   ],
   exports: [
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    UbicacionHorariosComponent
   ]
 })
 export class SharedModule { }
