@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lobster&family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+
+h4{font-size: 30px;
+  background-color: #ffffff;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  text-align: center;
+  font-family: 'Alfa Slab One', cursive;
+}
+
+.barra1{text-align: center; font-weight: 500;}
+
+.barra2{ font-weight: 500;
+text-align: center;
+padding-bottom: 5%;}
+
+.label1{display: list-item;
+align-items: start;
+text-align: center;
+font-family: Georgia, 'Times New Roman', Times, serif;}
+
+.botones{ display: flex;
+width: 80%; height: 30%;
+padding-left: 22%;
+display: flex; margin: 10px;}
+
+/*************************RESPONSIVE PANTALLAS PEQUEÑAS*****************************************/
+
+@media (max-width:1000px) {
+.botones{width: 150%;
+padding-right: 25%;
+display: flex;
+margin: 10px;
+padding-left: 5%;
+align-content: center;}
+}

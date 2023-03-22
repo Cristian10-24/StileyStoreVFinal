@@ -1,0 +1,33 @@
+
+button{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    left: 80%;
+}
+p{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+table {
+    width: 100%;
+}
+
+.mat-mdc-form-field {
+    font-size: 14px;
+    width: 100%;
+}
+
+.pointer{
+    cursor: pointer;
+}
+.search{
+    color: #1878b0;
+}
+.edit{
+    color: #0c8035;
+}
+.delete{
+    color: #e15639;
+}
