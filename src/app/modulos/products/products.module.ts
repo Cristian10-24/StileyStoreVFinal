@@ -8,7 +8,13 @@ import { MujerComponent } from './pages/mujer/mujer.component';
 import { HombreComponent } from './pages/hombre/hombre.component';
 import { NinosComponent } from './pages/ninos/ninos.component';
 import { CardComponent } from './components/card/card.component';
-
+import { ProductsComponent } from './products.component';
+import {MatSelectModule} from '@angular/material/select';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import {MatRadioModule} from '@angular/material/radio';
+import { MeotodoCompraComponent } from './pages/meotodo-compra/meotodo-compra.component';
+import { CarritoComponent } from './pages/carrito/carrito.component';
+import { PedidoComponent } from './pages/pedido/pedido.component';
 
 @NgModule({
   declarations: [
@@ -17,11 +23,19 @@ import { CardComponent } from './components/card/card.component';
     MujerComponent,
     HombreComponent,
     NinosComponent,
-    CardComponent
+    CardComponent,
+    ProductsComponent,
+    MeotodoCompraComponent,
+    CarritoComponent,
+    PedidoComponent
   ],
   imports: [
     CommonModule,
-    ProductsRoutingModule
+    ProductsRoutingModule,
+    MatSelectModule,
+    MatFormFieldModule,
+    MatRadioModule
+    
   ]
 })
 export class ProductsModule { }

@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{font-family: 'Barlow Condensed', sans-serif;}
+.contenedor_padre{display: grid;grid-template-columns: 1.3fr 1fr;margin:2rem;background-color: rgb(240, 240, 240);}
+.contenedor_derecha{margin-top:1rem;display: grid ;margin-top: 50px;}
+.descripcion_producto{font-size: 1.7rem;}
+.centrar_text{font-weight: 900;font-size: 2rem;}
+.centrar_text_hijo{font-size: 1.5rem;margin-top: 1rem;text-decoration: line-through;}
+.descripcion{font-size: 1rem;font-weight: 500;margin-top: 5px;}
+.form-check-input{border: 2px solid black;}
+
+.cantidad{display: flex;}
+.tamaño_fuente{margin-top: 9px;padding-left: 5px;}
+.material-symbols-rounded{margin-left: -50%;}
+.tamaño_fuente{font-size: 1.7rem;margin-top: 33px;}
+.titulo_contador{font-size: 20px;font-weight: 800;}
+
+.metodo_compra{display: grid;grid-template-columns: repeat(2,1fr);}
+.btn:hover {transform: translateY(-5px);box-shadow: 0 10px 20px rgba(27, 27, 27, .5);}
+.btn:active {transform: translateY(-3px);}
+.btn::after {content: "";display: inline-block;border-radius: 100px;top: 0;left: 0;position: absolute;z-index: -1;transition: all .3s;}
+.boton_metodo_derecha{text-align: center;font-size: 3rem;display: grid;justify-content: center;}
+.metodo{width: 50%;color: black;}
+ /*contenedor derecha */
+.contenedor_izquierda{background-color: rgba(250, 250, 250, 0.918);margin-top: 50px;border-radius: 20px;margin-left: 1rem;}
+button {position: relative;overflow: hidden;outline: none;cursor: pointer;border-radius: 50px;background-color: hsl(0, 0%, 100%);font-family: inherit;}
+.default-btn,.hover-btn {background-color: hsl(0, 0%, 0%);display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;align-items: center;gap: 15px;padding: 15px 20px;border-radius: 50px;font-size: 17px;font-weight: 500;text-transform: uppercase;transition: all .3s ease;}
+.hover-btn {position: absolute;inset: 0;color: black; background-color: hsl(0, 0%, 100%);transform: translate(0%,100%);}.default-btn span {color: hsl(0, 0%, 100%);}.button:hover .default-btn {transform: translate(0%,-100%);}
+button:hover .hover-btn {transform: translate(0%,0%);}
+.header_izquierda{display: flex;justify-content: space-between;margin: 10px 30px 10px 30px;}
+.button_izquierda {appearance: none;background-color: transparent;border: 0.125em solid #1A1A1A; border-radius: 0.9375em;box-sizing: border-box;color: #3B3B3B;cursor: pointer;display: inline-block;font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-size: 16px;font-weight: 600;line-height: normal;margin: 0;min-height: 3.75em;min-width: 0;outline: none;padding: 1em 2.3em;text-align: center;text-decoration: none;transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);user-select: none;-webkit-user-select: none;touch-action: manipulation;will-change: transform;} 
+.button_izquierda:disabled {pointer-events: none;}
+.button_izquierda:hover {color: hsl(0, 0%, 100%);background-color: #1A1A1A;box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;transform: translateY(-2px);}
+.button_izquierda:active {box-shadow: none;transform: translateY(0);}.botones_izquierda{display: flex;justify-content: space-between;margin: 10px 10px 10px 10px;}
+.imagen_producto{height: 500px;width: 98%;grid-area: i;}
+.imagen{display: flex;justify-content: center;}
+.fondo_contenedor_uno{height: fit-content;display: grid;margin-left: 1rem;}
+.fondo_contenedor_dos{ height: fit-content;display: grid;justify-content: start;}
+.fondo_contenedor_tres{height: fit-content; display:grid ;}
+.contenedor_padre_contenedor_tres{display: grid;grid-template-columns: 1fr     ;}
+.contenedor_derecha{display: flex;flex-direction: column;}
+.boton_izquierda_footer{position: relative;}
+.boton_metodo{border: 2px solid black;border-radius: 3px;margin: 2px 5px 2px 5px;}
+.boton_compra{width: 70%;height: 20%; margin: 0 auto;}
+.text_botoncompra{padding: 10px;}
+.body_descripcion{display: grid;}
+.body_descripcion{margin-left: 1rem;}
+.btn {
+    width: 90%;
+    padding: 1.1em 2em;
+    background: none;
+    border: 2px solid #fff;
+    font-size: 15px;
+    color: #000000;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    border-radius: 12px;
+    background-color: #c5c5c5;
+    font-weight: bolder;
+    box-shadow: 0 2px 0 2px #000;
+   }
+   
+   .btn:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 120%;
+    background-color: #ffffff;
+    top: 50%;
+    transform: skewX(30deg) translate(-150%, -50%);
+    transition: all 0.5s;
+   }
+   
+   .btn:hover {
+    background-color: #d4d4d4;
+    color: #fff;
+    box-shadow: 0 2px 0 2px #0d3b66;
+   }
+   
+   .btn:hover::before {
+    transform: skewX(30deg) translate(150%, -50%);
+    transition-delay: 0.1s;
+   }
+   
+   .btn:active {
+    transform: scale(0.9);
+   }
+   .text_option{color: black !important;font-weight: 600;}
+   .metodo_compra{display: grid;justify-content: space-between;}
+   .tallas{display: grid;}
+
+   @media only screen and (max-width: 800px) {
+    .contenedor_padre{display: flex;flex-wrap: wrap;justify-content: center;width: 95%;}
+    .contenedor_izquierda,.contenedor_derecha{width: 90%;}
+    
+    .metodo_compra{display: flex;flex-wrap: wrap;}
+    .fondo_contenedor_tres{display: flex;justify-content: center;flex-direction: column;}
+    .metodo_transferencia{margin-top: -1.5rem;}
+    
+
+    
+    
+}
