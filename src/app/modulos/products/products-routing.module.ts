@@ -22,7 +22,8 @@ const routes: Routes = [
   ] },
   {path:'comprar',component: MeotodoCompraComponent},
   {path:'carrito',component: CarritoComponent},
-  {path:'pedido', component: PedidoComponent}
+  {path:'pedido', component: PedidoComponent},
+  { path: '**', pathMatch: 'full', redirectTo: '/productos'}
 
   
 ];

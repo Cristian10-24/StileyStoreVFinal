@@ -51,7 +51,7 @@ export class IngresoComponent {
     this.loading = true;
     setTimeout(() => {
       //redireccionar al home
-      this.router.navigate(['/dashboard']);
+      this.router.navigate(['/home']);
     this.loading = false;
     }, 100
     );

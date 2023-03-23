@@ -17,11 +17,9 @@ children:[
   {path:'pedidos',component:PedidosPerfilComponent},
   {path:'direcciones',component:DireccionesPerfilComponent}
 ]},
-{path:'datos-perfil',component:VistaPerfilComponent,
-children:[
-  {path:'datos',component:PerfilComponent}
-]},
-  { path: '**', redirectTo: '/ingresar', pathMatch: 'full' }
+{path:'datos-perfil',component:VistaPerfilComponent,},
+{ path: '**', redirectTo: '/login', pathMatch: 'full' }
+
 ];
 
 @NgModule({
