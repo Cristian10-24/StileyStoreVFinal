@@ -1,0 +1,17 @@
+<app-header></app-header>
+<div class="contenedor-padre">
+ 
+    <div class="contenedor-izquierda">
+      <h1 class="text-center">PERFIL USUARIO</h1>
+      <a routerLink="info-perfil" routerLinkActive="active">perfil</a>
+      <a routerLink="direcciones" routerLinkActive="active">direcciones</a>
+      <a routerLink="pedidos" routerLinkActive="active">pedidos</a>
+      
+    </div>
+    <div class="contenedor-derecha">
+      <router-outlet></router-outlet>
+    </div>
+
+</div>
+<app-footer></app-footer>
+
