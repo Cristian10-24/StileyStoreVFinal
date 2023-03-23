@@ -15,6 +15,10 @@ import {MatRadioModule} from '@angular/material/radio';
 import { MeotodoCompraComponent } from './pages/meotodo-compra/meotodo-compra.component';
 import { CarritoComponent } from './pages/carrito/carrito.component';
 import { PedidoComponent } from './pages/pedido/pedido.component';
+import { SharedModule } from '../shared/shared.module';
+import { DescripcionComponent } from './pages/descripcion/descripcion.component';
+import { HeaderProductosComponent } from './components/header-productos/header-productos.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,14 +31,18 @@ import { PedidoComponent } from './pages/pedido/pedido.component';
     ProductsComponent,
     MeotodoCompraComponent,
     CarritoComponent,
-    PedidoComponent
+    PedidoComponent,
+    DescripcionComponent,
+    HeaderProductosComponent
   ],
   imports: [
     CommonModule,
     ProductsRoutingModule,
     MatSelectModule,
     MatFormFieldModule,
-    MatRadioModule
+    MatRadioModule,
+    SharedModule,
+    HttpClientModule
     
   ]
 })
