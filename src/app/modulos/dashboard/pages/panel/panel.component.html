@@ -1,46 +1,43 @@
-<h1 class="text-center">DASHBOARD FUNCIONANDO</h1>
+<div class="padr">
+<app-header></app-header>
+
+<h1 class="text-center">DASHBOARD </h1>
 <div class="row">
+  
     <div class="col-sm-4 mt-5 mb-1" >
-      <div routerLink="/dashboard/usuarios"  class="card m-3 lista">
-        <div class="card-body">
-          <h3  class="card-title ">Usuarios</h3>
-        </div>
-      </div>
+      <button routerLink="/dashboard/usuarios">
+        Usuarios
+      </button>
     </div>
-    <div class="col-sm-4 mt-5 mb-1" >
-      <div routerLink="/dashboard/productos"  class="card m-3 lista">
-        <div class="card-body">
-          <h3  class="card-title ">Productos</h3>
-        </div>
-      </div>
+ 
+    <div class="col-sm-4 mt-5 mb-1 " >
+      <button routerLink="/dashboard/productos">
+        Productos
+      </button>
     </div>
-    <div class="col-sm-4 mt-5 mb-1" >
-      <div routerLink="/dashboard/pedidos"  class="card m-3 lista">
-        <div class="card-body">
-          <h3  class="card-title ">Pedidos</h3>
-        </div>
-      </div>
+ 
+    <div class="col-sm-7 mt-5 mb-1 " >
+      <button routerLink="/dashboard/pedidos">
+        pedidos
+      </button>
     </div>
-    <div class="col-sm-4 mt-5 mb-1" >
-      <div routerLink="/dashboard/ventas"  class="card m-3 lista">
-        <div class="card-body">
-          <h3  class="card-title ">Ventas</h3>
-        </div>
-      </div>
+    <div class="col-sm-4 mt-5 mb-1 " >
+      <button routerLink="/dashboard/ventas"  >
+        ventas
+      </button>
     </div>
-    <div class="col-sm-4 mt-5 mb-1" >
-      <div routerLink="/dashboard/calificaciones"  class="card m-3 lista">
-        <div class="card-body">
-          <h3  class="card-title ">Calificaciones</h3>
-        </div>
-      </div>
+    <div class="col-sm-4 mt-5 mb-1 " >
+      <button routerLink="/dashboard/calificaciones"  >
+        calificaciones
+      </button>
     </div>
-    <div class="col-sm-4 mt-5 mb-1" >
-      <div routerLink="/dashboard/reclamos"  class="card m-3 lista">
-        <div class="card-body">
-          <h3  class="card-title ">Quejas y Reclamos</h3>
-        </div>
-      </div>
+    <div class="col-sm-4 mt-5 mb-1 " >
+      <button routerLink="/dashboard/reclamos"  >
+        Quejas y reclamos
+      </button>
     </div>
   </div>
   
+  <app-footer></app-footer>
+
+</div>
