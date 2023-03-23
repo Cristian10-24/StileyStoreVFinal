@@ -1,0 +1,23 @@
+.contenedor-padre{display: grid;grid-template-columns: 1fr 1fr;margin-bottom: 10px;}
+.contenedor-izquierda{display: flex;flex-direction: column;font-size: 1.5rem;width: 500px;height: 400px;gap: 20px;justify-content: center;margin-left: 10px;align-items: center;}
+a{text-decoration: none;color: black;}
+.active{color: rgb(100, 3, 100);border-bottom: 2px solid black;}
+.css-button-fully-rounded--black {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid #212529;
+    background: #212529;
+  }
+  .css-button-fully-rounded--black:hover {
+    background: #fff;
+    color: #212529
+  }
