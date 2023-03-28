@@ -1,0 +1,68 @@
+.div>img{
+  max-height: 500px;
+}
+
+.infoMasculino, .infoFemenino{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  bottom: 1px;
+  z-index: 1;
+  visibility: hidden;
+}
+.infoMasculino:hover, .infoFemenino:hover{
+  background-color: gray;
+  transition: linear all 0.6s;
+}
+.infoRInterior, .infoCamisas, .infoSudaderas, .infoBlusas{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  bottom: 1px;
+  z-index: 1;
+  visibility: hidden;
+}
+.infoRInterior:hover, .infoCamisas:hover, .infoSudaderas:hover, .infoBlusas:hover{
+  background-color: gray;
+  transition: linear all 0.6s;
+}
+img:hover{
+  opacity: .4;
+}
+.img{
+  width: 100%;
+  height: 250px;
+}
+.hoverMasculino:hover .infoMasculino{
+  visibility: visible;
+}
+.hoverFemenino:hover .infoFemenino{
+  visibility: visible;
+}
+.hoverCamisas:hover .infoCamisas{
+  visibility: visible;
+}
+.hoverBlusas:hover .infoBlusas{
+  visibility: visible;
+}
+.hoverSudaderas:hover .infoSudaderas{
+  visibility: visible;
+}
+.hoverRInterior:hover .infoRInterior{
+  visibility: visible;
+}
+
+/********************************** RESPONSIVE PARA PANTALLAS MEDIANAS********************************/
+@media (max-width:990px){
+  .hoverFemenino{
+  margin-top: 20px;
+  }
+  .container{
+  margin-top: 25px !important;
+  }
+}
+
