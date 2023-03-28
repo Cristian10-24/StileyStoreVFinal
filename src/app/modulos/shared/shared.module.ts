@@ -16,7 +16,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { WelcomeModule } from '../welcome/welcome.module';
+import { CartComponent } from '../producto/components/cart/cart.component';
 
 
 
@@ -27,7 +27,7 @@ import { WelcomeModule } from '../welcome/welcome.module';
     FooterComponent,
     HeaderComponent,
     UbicacionHorariosComponent,
-
+    CartComponent
   ],
   imports: [
       CommonModule,
@@ -50,6 +50,7 @@ import { WelcomeModule } from '../welcome/welcome.module';
     UbicacionHorariosComponent,
       FooterComponent,
       HeaderComponent,
+      CartComponent,
      // Módulos de Angular Material
       MatFormFieldModule,
       MatButtonModule,
