@@ -13,12 +13,16 @@
                 <li class="nav-item">
                     <a class="nav-link" routerLink="/productos">Productos</a>
                 </li>
+                
                 <li class="nav-item">
                     <a class="nav-link" routerLink="/about">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" routerLink="/productos/categorias">Promociones</a>
                 </li>
+                
+               
+               
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Dropdown
@@ -33,11 +37,22 @@
                 <li class="nav-item">
                     <a class="nav-link" routerLink="/dashboard">Administrador</a>
                 </li>
+             
             </ul>
+            <div class="navbar-cart" (click)="onToggleCart()">
+                <div class="navbar-cart-items">
+                    <p>{{cantUnits()}}</p>
+                </div>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
             <div class="icons">
                 <i class="fa-solid fa-cart-shopping text-white mx-1"></i>
                 <i class="fa-regular fa-user text-white mx-1"></i>
+               
             </div>
         </div>
     </div>
 </nav>
+<div class="cart"[ngClass]="{show:viewCart}">
+    <app-cart></app-cart>
+</div>
