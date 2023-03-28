@@ -1,29 +1,64 @@
-import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-ingreso',
   templateUrl: './ingreso.component.html',
   styleUrls: ['./ingreso.component.scss']
 })
-export class IngresoComponent {
 
-  form: FormGroup;
-  loading = false;
 
-  constructor(private fb: FormBuilder,
+
+export class IngresoComponent implements OnInit {
+  username!:string;
+  password!: string;
+ /*  loginForm:FormGroup; */
+
+
+
+/*   public myForm!:FormBuilder; */
+
+
+
+
+
+
+
+
+
+/* 
+  form: FormGroup; */
+/*   loading = false; */
+
+  constructor(
+    
+    
+   /*  private fb: FormBuilder,
               private _snackBar: MatSnackBar,
-              private router: Router){
-    this.form = this.fb.group({
+              private router: Router */){
+   /*  this.form = this.fb.group({
       usuario: ['', Validators.required],
       password: ['', Validators.required]
 
-    })
+    }) */
   }
-  
+  ngOnInit(){
 
+
+
+   /*  this.loginForm = new FormGroup({
+      email: new FormControl('',[Validators.required, Validators.email]),
+      password : new FormControl('',[Validators.required, Validators.minLength(8)])
+    }); */
+  }
+
+
+
+  
+  /* 
   ingresar(){
     console.log(this.form);
     const usuario = this.form.value.usuario;
@@ -55,5 +90,11 @@ export class IngresoComponent {
     this.loading = false;
     }, 100
     );
+  } */
+
+  loginUser(){
+    if(this.username == "admin" && this.password== "admin123"){
+      console.log("welcome");
+    }
   }
 }

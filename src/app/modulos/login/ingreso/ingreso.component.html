@@ -1,1 +1,7 @@
-<h1 class="text-center"><a routerLink="./login/perfil">ir a perfil</a></h1>
+<form >
+  <label for="">nombre</label>
+  <input type="text" name="username" [(ngModel)]="username">
+  <label for="">contraseña</label>
+  <input type="password "  name="password" [(ngModel)]="password">
+  <input type="submit" value="login" (click)="loginUser()">
+</form>
