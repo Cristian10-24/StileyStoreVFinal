@@ -1,0 +1,165 @@
+
+  .contenedor-izquierda {
+    border: 2px solid rgb(199, 199, 199);
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin: 1rem;
+  }
+  .header-izquierda > img {
+    width: 60%;
+  }
+  .body-izquierda {
+    display: grid;
+  }
+  .card_precio_tash {
+    text-decoration: line-through;
+    color: rgb(243, 58, 58);
+  }
+  .card-header {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+  }
+  .card-footer {
+    font-size: 17px;
+    font-weight: 400;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  button {
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+    background: #e62222;
+  }
+  
+  button,
+  button span {
+    transition: 200ms;
+  }
+  
+  button .text {
+    transform: translateX(35px);
+    color: white;
+    font-weight: bold;
+  }
+  
+  button .icon {
+    position: absolute;
+    border-left: 1px solid #c41b1b;
+    transform: translateX(110px);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  button svg {
+    width: 15px;
+    fill: #eee;
+  }
+  
+  button:hover {
+    background: #ff3636;
+  }
+  
+  button:hover .text {
+    color: transparent;
+  }
+  
+  button:hover .icon {
+    width: 150px;
+    border-left: none;
+    transform: translateX(0);
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  button:active .icon svg {
+    transform: scale(0.8);
+  }
+  .footer-izquierda {
+    display: grid;
+    justify-content: end;
+    align-items: end;
+    padding: 20px;
+  }
+  .header-izquierda>img{width: 90%;border: 2px solid gray;padding: 2px;margin: 2px;}
+  .card-header>p{font-size: 0.8rem;}
+  .tittle_carrito{text-align: center;margin-top: 10px;}
+  .izquierda{display: flex;}
+  .contenedor_grid{display: grid;grid-template-columns: 2fr,1fr;}
+
+
+  .contenedor-derecha{
+    border: 1px solid ;
+    position: fixed;
+    right: 0;
+    margin-right: 40px;
+  }
+  .infoProductos{
+    display: flex;
+    flex-direction: column;
+    p{
+        font-size: 1.3rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+  }
+  .boton{display: grid;justify-content: center;}
+.boton > button {
+  appearance: none;
+  background-color: transparent;
+  border: 0.125em solid #1a1a1a;
+  border-radius: 0.9375em;
+  box-sizing: border-box;
+  color: #3b3b3b;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 3.75em;
+  min-width: 0;
+  outline: none;
+  padding: 1em 2.3em;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+}
+
+button:disabled {
+  pointer-events: none;
+}
+
+button:hover {
+  color: #fff;
+  background-color: #1a1a1a;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+
