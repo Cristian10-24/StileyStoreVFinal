@@ -11,18 +11,29 @@ img{
     width: 200px;
     height: 50px;
 }
+<<<<<<< HEAD
 
 nav{
   
       width: 100%;
+=======
+nav{
+    width: 100%;
+>>>>>>> master
     height: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     }
     
+<<<<<<< HEAD
     #menu{
    
+=======
+    
+    #menu{
+    width: 10%;
+>>>>>>> master
     height: 45px;
     color: rgb(255, 255, 255);
     margin-left: -2rem;
@@ -33,15 +44,23 @@ nav{
     
     #menu li{
     float:left;
+<<<<<<< HEAD
   
     font-size: 1rem;
+=======
+
+>>>>>>> master
   margin-top: 0.5rem;
     list-style: none;
     } 
     
     #menu li a{
     color:#afafaf;
+<<<<<<< HEAD
     font-size:1.0rem;
+=======
+    font-size:1.1rem;
+>>>>>>> master
     padding:10px;
    
    
@@ -64,8 +83,13 @@ nav{
     /*le damos el color blanco al enlance del submenu y el background negro */    
     #menu li:hover > a{
     color:#fff;
+<<<<<<< HEAD
     background-color: #424242;
     
+=======
+    
+    width: 100px; 
+>>>>>>> master
     } 
     
     #menu li > ul li a{
@@ -89,6 +113,7 @@ nav{
     padding: 0;
     width: 80%;
     
+<<<<<<< HEAD
     border-color: rgba(189, 189, 189, 0.6);
     
     }
@@ -106,3 +131,78 @@ nav{
      }
     }
     
+=======
+    border-color: rgba(189, 189, 189, 0.6);  }
+    .boton{display: flex;cursor: pointer; ;gap: 20px;}
+
+button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+}
+
+button {
+  --primary-color: #cecbcb;
+  --hovered-color: #b6acac;
+  position: relative;
+  display: flex;
+  font-weight: 600;
+  font-size: 20px;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+button p {
+  margin: 0;
+  position: relative;
+  font-size: 20px;
+  color: var(--primary-color)
+}
+
+button::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  bottom: -7px;
+  background: var(--hovered-color);
+  height: 2px;
+  transition: 0.3s ease-out;
+}
+
+button p::before {
+  position: absolute;
+/*   box-sizing: border-box; */
+  content: "";
+  width: 0%;
+  inset: 0;
+  color: var(--hovered-color);
+  overflow: hidden;
+  transition: 0.3s ease-out;
+}
+
+button:hover::after {
+  width: 100%;
+}
+
+button:hover p::before {
+  width: 100%;
+}
+
+button:hover svg {
+  transform: translateX(4px);
+  color: var(--hovered-color)
+}
+
+button svg {
+  color: var(--primary-color);
+  transition: 0.2s;
+  position: relative;
+  width: 15px;
+  transition-delay: 0.2s;
+}
+.boton_nav{font-size: 2rem;color: white;}
+.boton_nav p{color: white;}
+.cart{cursor: pointer;}
+>>>>>>> master

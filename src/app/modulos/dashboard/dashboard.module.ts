@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { DashboardRoutingModule } from './dashboard-routing.module';
-import { ListProductosComponent } from './pages/list-productos/list-productos.component';
 import { ListPedidosComponent } from './pages/list-pedidos/list-pedidos.component';
 import { ListVentasComponent } from './pages/list-ventas/list-ventas.component';
 import { ListCalificacionesComponent } from './pages/list-calificaciones/list-calificaciones.component';
@@ -18,7 +17,6 @@ import { CreateProductoComponent } from './pages/list-productos/create-producto/
 
 @NgModule({
   declarations: [
-    ListProductosComponent,
     ListPedidosComponent,
     ListVentasComponent,
     ListCalificacionesComponent,

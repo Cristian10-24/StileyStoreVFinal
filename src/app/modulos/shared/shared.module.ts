@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 import { FooterComponent } from './components/footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
+import { ContactenosComponent } from './components/contactenos/contactenos.component';
 import { UbicacionHorariosComponent } from './components/ubicacion-horarios/ubicacion-horarios.component';
-
 // Importaciones de Angular Material
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { MatInputModule } from '@angular/material/input';
@@ -16,6 +16,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { CartComponent } from '../producto/components/cart/cart.component';
+
 
 
 
@@ -24,7 +26,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
   declarations: [
     FooterComponent,
     HeaderComponent,
-    UbicacionHorariosComponent
+    UbicacionHorariosComponent,
+    CartComponent
   ],
   imports: [
       CommonModule,
@@ -47,6 +50,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     UbicacionHorariosComponent,
       FooterComponent,
       HeaderComponent,
+      CartComponent,
      // Módulos de Angular Material
       MatFormFieldModule,
       MatButtonModule,
@@ -57,7 +61,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
       MatToolbarModule,
       MatInputModule,
       MatSnackBarModule,
-      MatTooltipModule
+      MatTooltipModule,
   ],
 })
 

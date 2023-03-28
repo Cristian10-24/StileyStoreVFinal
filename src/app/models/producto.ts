@@ -1,10 +1,10 @@
 export interface Producto{
-    producto: number;
-    referencia: ReferenciaProducto;
-    categoria: CategoriaProducto;
+    producto: string;
+    referencia: string;
+    categoria: string;
     nombre: string;
     estado: string;
-    stock: number;
+    stock: string;
 }
 export interface ReferenciaProducto{
     referencia: number;

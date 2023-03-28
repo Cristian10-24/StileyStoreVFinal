@@ -1,0 +1,38 @@
+<app-header></app-header>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-7 columna-izquierda">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.B4GtkEXBJAKn2AvI5RLciAHaKx&pid=Api&P=0" alt="" class="w-100">
+        </div>
+        <div class="col-md-5 columna-derecha" *ngFor="let producto of product">
+            <div class="header">
+                <h1>{{product[0].title}}</h1>
+                <p>${{product[0].price}}</p>
+            </div>
+            <div class="body">
+                <div class="description mb-5">
+                    <h4>Descripcion</h4>
+                    <p>{{product[0].description}}</p>
+                </div>
+                <div class="color mb-3">
+                    <h4>Color disponible</h4>
+                    <button>Azul</button>
+                    <button>verde</button>
+                </div>
+                <div class="talla">
+                    <h4>Tallas disponibles</h4>
+                    <button>X</button>
+                    <button>XL</button>
+                    <button>M</button>
+                    <button>S</button>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="buttons">
+                    <button class="btn btn-success" (click)="addToCart(product[0])" routerLink="/productos/view-carrito">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
