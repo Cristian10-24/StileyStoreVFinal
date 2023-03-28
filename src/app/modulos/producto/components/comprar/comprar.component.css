@@ -1,0 +1,13 @@
+.container{
+    width: 50%;
+}
+.container{
+    border: 1px solid gray;
+    padding: 1.5rem;
+    border-radius:10px;
+    display: flex;
+    flex-direction: column;
+}
+.btn{
+    
+}

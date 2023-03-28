@@ -16,6 +16,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { CartComponent } from '../producto/components/cart/cart.component';
 
 
 
@@ -24,7 +25,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
   declarations: [
     FooterComponent,
     HeaderComponent,
-    UbicacionHorariosComponent
+    UbicacionHorariosComponent,
+    CartComponent,
   ],
   imports: [
       CommonModule,
@@ -57,7 +59,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
       MatToolbarModule,
       MatInputModule,
       MatSnackBarModule,
-      MatTooltipModule
+      MatTooltipModule,
+      CartComponent
   ],
 })
 
