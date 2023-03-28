@@ -1,0 +1,40 @@
+.columna-izquierda{
+    height: 110vh;
+    img{
+        height:100%;
+    }
+}
+.columna-derecha{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(196, 194, 194);
+    padding-left:40px;
+    .header{
+        flex-basis: 30%;
+        border-bottom: 1px solid black;
+        h1{
+            font-size: 50px;
+        }
+        p{
+            font-size: 30px;
+        }
+    }
+    .body{
+        flex-basis: 60%;
+        .color{
+            border-bottom: 1px solid black;
+            padding-bottom: 20px;
+        }
+        .talla{
+            padding-bottom: 20px;
+        }
+        .description{
+            border-bottom: 1px solid black;
+            padding-bottom: 20px;
+            p{font-size: 1rem;}
+        }
+    }
+    .footer{
+        flex-basis: 10%;
+    }
+}
