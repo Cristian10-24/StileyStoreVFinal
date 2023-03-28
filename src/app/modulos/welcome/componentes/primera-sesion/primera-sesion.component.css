@@ -51,7 +51,7 @@
   .hoverRInterior:hover .infoRInterior{
     visibility: visible;
   }
-  
+
   /********************************** RESPONSIVE PARA PANTALLAS MEDIANAS********************************/
   @media (max-width:990px){
     .hoverFemenino{
@@ -61,4 +61,5 @@
       margin-top: 25px !important;
     }
   }
-  
+
+

@@ -13,6 +13,7 @@ import { Carrusel2Component } from './pages/ofertas/carrusel2/carrusel2.componen
 import { Seccion1Component } from './pages/ofertas/seccion1/seccion1.component';
 import { Seccion2Component } from './pages/ofertas/seccion2/seccion2.component';
 import { Seccion3Component } from './pages/ofertas/seccion3/seccion3.component';
+import { ContactenosComponent } from '../shared/components/contactenos/contactenos.component';
 
 
 @NgModule({
@@ -26,12 +27,14 @@ import { Seccion3Component } from './pages/ofertas/seccion3/seccion3.component';
     Carrusel2Component,
     Seccion1Component,
     Seccion2Component,
-    Seccion3Component
+    Seccion3Component,
+    ContactenosComponent
   ],
   imports: [
     CommonModule,
     WelcomeRoutingModule,
     SharedModule
+
   ]
 })
 export class WelcomeModule { }
