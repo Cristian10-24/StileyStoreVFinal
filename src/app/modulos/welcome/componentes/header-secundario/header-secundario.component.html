@@ -10,8 +10,25 @@
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" routerLink="/">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" routerLink="/productos">Productos</a>
+                <li class="nav-item ">
+                    <div id="menu"> 
+                        <ul class="menup"> 
+                           
+                            <li class="dropdown"><a  routerLink="/productos">productos</a> 
+                                <ul class="links"> 
+                                    <li><span></span><a class="links " routerLink="/productos">mixto</a></li>
+                                    <hr> 
+                                    <li><span></span><a class="links " routerLink="/productos">mujer</a></li> 
+                                    <hr>
+                                    <li><span></span><a class="links " routerLink="/produsctos">hombre</a></li>
+                                    <hr>
+                                  
+                                </ul> 
+                            </li>
+                               
+                            </ul>
+                           
+                        </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" routerLink="/about">About</a>
@@ -19,22 +36,25 @@
                 <li class="nav-item">
                     <a class="nav-link" routerLink="/Ofertas">Ofertas</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
+              
             </ul>
             <form class="d-flex" role="search">
-                <button class="btn btn-outline-success me-2" routerLink="/login" type="button">Ingresar</button>
-                <button class="btn btn-outline-success me-2" routerLink="/login/registrar"
-                    type="button">Registrar</button>
+               
+                    <div class="boton" id="boton">
+                        <button class="boton_nav">
+                            <p>iniciar sesion</p>
+                            <svg stroke-width="4" stroke="currentColor" viewBox="0 0 24 24" fill="none" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg">
+                                <path></path>
+                            </svg>
+                        </button>
+                        <button class="boton_nav">
+                            <p>Registrar</p>
+                            <svg stroke-width="4" stroke="currentColor" viewBox="0 0 24 24" fill="none" class="h-6 w-6" >
+                                <path ></path>
+                            </svg>
+                        </button>
+                       
+                    </div>
             </form>
         </div>
     </div>

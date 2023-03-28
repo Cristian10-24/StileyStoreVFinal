@@ -11,8 +11,25 @@
                     <a class="nav-link active" aria-current="page" routerLink="/home"><i
                             class="fa-solid fa-house"></i></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" routerLink="/productos">Productos</a>
+                <li class="nav-item ">
+                    <div id="menu"> 
+                        <ul class="menup"> 
+                           
+                            <li class="dropdown"><a  href="">productos</a> 
+                                <ul class="links"> 
+                                    <li><span></span><a class="links " routerLink="/productos">mixto</a></li>
+                                    <hr> 
+                                    <li><span></span><a class="links " routerLink="/productos">mujer</a></li> 
+                                    <hr>
+                                    <li><span></span><a class="links " routerLink="/productos">hombre</a></li>
+                                    <hr>
+                               
+                                </ul> 
+                            </li>
+                               
+                            </ul>
+                           
+                        </div>
                 </li>
                 
                 <li class="nav-item">
@@ -21,33 +38,27 @@
                 <li class="nav-item">
                     <a class="nav-link" routerLink="/Ofertas">Ofertas</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
+               
+               
                 <li class="nav-item">
-                    <a class="nav-link" routerLink="/dashboard">Administrador</a>
+                    <a routerLink="/dashboard" class="nav-link" >Administrador</a>
                 </li>
             </ul>
-            <div class="navbar-cart" (click)="onToggleCart()">
+            <div class="navbar-cart " (click)="onToggleCart()">
                 <div class="navbar-cart-items">
                     <p>{{cantUnits()}}</p>
                 </div>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-cart-shopping carrito"></i>
               </div>
             <div class="icons">
-                <i class="fa-solid fa-cart-shopping text-white mx-1"></i>
                 <i [routerLink]="['/login/perfil']" routerLinkActive="router-link-active"
                     class="fa-regular fa-user text-white mx-1"></i>
 
             </div>
         </div>
     </div>
+
 </nav>
+<div class="cart" [ngClass]="{show:viewCart}">
+    <app-cart></app-cart>
+</div>
